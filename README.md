@@ -8,4 +8,4 @@ That's why I added this code:
 
  ```
  moq.Setup(x => x.GetAccountAmount(It.IsNotIn(new int[] { 1, 5 })))
-                .Throws(new InvalidOperationException());
+                .Throws(new InvalidOperationException()); 
